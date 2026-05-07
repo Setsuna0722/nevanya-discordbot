@@ -1,0 +1,13 @@
+.idea/
+.venv/
+.env
+__pycache__/
+*.pyc
+
+# 安全金鑰檔案 (絕對不能上傳)
+service_account.json
+*.json
+
+# 備份與暫存檔
+*_bak.py
+*.log
