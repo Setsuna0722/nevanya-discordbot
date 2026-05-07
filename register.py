@@ -58,12 +58,6 @@ def setup_register_command(client):
                 # 如果你還想顯示「工作中...」，就要用 followup
                 temp_msg =await interaction.followup.send("⏳ 機器人工作中...", ephemeral=True)
 
-                # 顯示「機器人工作中...」
-                #await interaction.response.defer(ephemeral=True)
-
-                # 此為送一個暫時訊息，顯示「機器人工作中...」(不能跟隱藏按鈕共用)
-                #await interaction.response.send_message("⏳ 機器人工作中...", ephemeral=True)
-
                 # 登記資料
                 result = save_result(self.winner, self.loser, self.board_size)
                 registrar = interaction.user
@@ -77,9 +71,6 @@ def setup_register_command(client):
 
                     f"⬇️下一位請登記，指令 /register  —由【勝方】登記😊"
                 )
-
-                # 刪除暫時訊息
-                #await interaction.delete_original_response()
 
                 # 發送到公開頻道
                 await self.channel.send(msg)
@@ -119,8 +110,6 @@ def setup_register_command(client):
             )
             return
 
-        # 先 defer，避免 3 秒超時
-        #await interaction.response.defer(ephemeral=True)
         players = get_players()
 
         # 驗證勝方
