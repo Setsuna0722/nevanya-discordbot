@@ -1,5 +1,7 @@
 # 🎮 Discord 成績登記機器人
 
+<img src="images/00_snowball.png" width="150">
+
 > 使用 Python + Discord Bot 打造的社群對戰成績自動化系統  
 > 提供快速登記、即時更新、成績管理功能
 
