@@ -103,3 +103,21 @@ Discord Bot (Python)
 Logic Process
    ↓
 Google Sheets
+```
+---
+
+# 🚀 部署方式
+
+本專案使用 NSSM（Non-Sucking Service Manager）將 Discord Bot 轉換為 Windows 服務，以達到背景常駐與開機自動啟動
+
+## 🔹執行環境
+- Python 3.12
+- 建議使用虛擬環境（.venv）
+- 作業系統：Windows 10
+
+## 🔹NSSM畫面
+<img src="images/nssm.png" width="700">
+
+## 🔹CMD操作
+- ▶️ 啟動服務 net start DiscordBot
+- ⛔ 停止服務 net stop DiscordBot
