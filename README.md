@@ -17,13 +17,10 @@
 
 <img src="images/02_register_winner.png" width="700">
 <img src="images/03_register_size.png" width="700">
----
 
 ### 🔹 確認送出畫面
 
 <img src="images/04_confirm.png" width="700">
-
----
 
 ### 🔹 成績更新成功畫面
 
@@ -64,7 +61,7 @@
 
 # 🧠 技術亮點
 
-## 🔹 Discord UI 互動設計
+### 🔹 Discord UI 互動設計
 
 使用：
 
@@ -74,17 +71,13 @@
 
 提升使用者體驗。
 
----
-
-## 🔹 非同步防衝突設計
+### 🔹 非同步防衝突設計
 
 使用 `asyncio.Lock()`
 
 避免多人同時登記造成資料錯亂。
 
----
-
-## 🔹 外部資料整合
+### 🔹 外部資料整合
 
 資料可串接：
 
@@ -110,14 +103,14 @@ Google Sheets
 
 本專案使用 NSSM（Non-Sucking Service Manager）將 Discord Bot 轉換為 Windows 服務，以達到背景常駐與開機自動啟動
 
-## 🔹執行環境
+### 🔹執行環境
 - Python 3.12
 - 建議使用虛擬環境（.venv）
 - 作業系統：Windows 10
 
-## 🔹NSSM畫面
+### 🔹NSSM畫面
 <img src="images/nssm.png" width="700">
 
-## 🔹CMD操作
+### 🔹CMD操作
 - ▶️ 啟動服務 net start DiscordBot
 - ⛔ 停止服務 net stop DiscordBot
