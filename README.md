@@ -54,7 +54,7 @@
 
 ### 🛠 管理端
 
-- 可擴充重置分數
+- 可擴充/重置分數
 - 查詢歷史紀錄
 
 ---
@@ -79,10 +79,7 @@
 
 ### 🔹 外部資料整合
 
-資料可串接：
-
-- Google Sheets
-- SQL Database（未來擴充）
+- 資料串接：Google Sheets
 
 ---
 
@@ -126,3 +123,17 @@ Google Sheets
 ### 🔹CMD操作
 - ▶️ 啟動服務 net start DiscordBot
 - ⛔ 停止服務 net stop DiscordBot
+
+---
+## 👨‍💻 專案說明
+
+此作品展示以下能力：
+
+* Python Discord Bot 開發（discord.py）
+* 指令互動與事件處理設計
+* 成績資料新增、查詢與管理流程
+* 使用 Google Sheets 進行資料儲存與同步
+* 非同步處理與資料一致性控制
+* 權限管理與使用者操作限制設計
+* 錯誤處理與操作回饋機制（Embed / Message）
+* 模組化程式架構設計（指令/邏輯/資料層分離）
