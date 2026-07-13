@@ -95,6 +95,55 @@ Logic Process
 Google Sheets
 ```
 
+## 🌐 REST API
+
+除了 Discord Bot 指令外，本專案也提供 FastAPI 介面，可供網站或其他應用程式即時查詢棋局資料。
+
+### 🔹 API 功能
+
+* **總排行榜**：取得所有玩家積分排名(顯示前10名)
+* **分組排行榜**：取得各組前3名排名
+* **玩家資料查詢**：查詢指定玩家的個人成績與統計資訊
+
+### 🔹 API 架構
+
+```text
+WordPress / 其他應用
+          │
+          ▼
+      FastAPI
+          │
+          ▼
+   Google Sheets
+```
+
+### 🔹 技術特色
+
+* FastAPI 建立 RESTful API
+* Google Sheets 即時讀取資料
+* JSON 格式回傳
+* 模組化 API 設計，方便後續擴充
+
+### 🔹 API 路由
+
+```text
+GET /rank
+GET /group-rank
+GET /player/{name}
+```
+
+### 🔹 專案結構
+
+```text
+API_server.py        FastAPI 主程式
+rank_api.py          排行榜 API
+showself.py          玩家資料 API
+google_sheet.py      Google Sheets 連線
+```
+
+
+
+
 ## 🛠️ AI 協作開發說明
 
 本專案採 AI 協作開發流程，透過 AI 工具協助：
